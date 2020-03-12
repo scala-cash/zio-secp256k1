@@ -1,8 +1,0 @@
-language: scala
-scala:
-  - 2.13.1
-script:
-  - sbt clean scalafmtCheckAll coverage test coverageOff
-after_success:
-  - sbt coverageReport coveralls
-sudo: false
