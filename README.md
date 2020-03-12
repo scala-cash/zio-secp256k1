@@ -16,7 +16,8 @@ The latest version matches the badge above
 
 ## Usage
 
-The calls are done directly on the package object 
+The calls are done directly on the package object. The library also comes with two helper functions to convert
+to and from hex `hexToBytes` and `bytesToHex`
 
 ```scala 
   val res: Task[Boolean] = secp256k1.verifyLibrary
@@ -28,7 +29,8 @@ The calls are done directly on the package object
 ```
 
 ## Api
-
+The Task object is a `ZIO[Any, Throwable, A]` type alias. It means that the effect could throw an exception if something
+goes wrong (i.e invalid input data, fail to connect to native library)
 ```scala
   type Bytes = Array[Byte]
   

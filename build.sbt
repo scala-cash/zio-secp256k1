@@ -2,7 +2,7 @@ name := "zio-secp256k1"
 
 organization := "org.scash"
 
-version := "0.1"
+version := "0.1.2"
 
 scalaVersion := "2.13.1"
 
@@ -12,7 +12,7 @@ resolvers ++= Seq(
   Resolver.bintrayRepo("scala-cash", "io")
 )
 
-scmInfo := Some(ScmInfo(url("https://github.com/scala-cash/ziosecp256k1"), "git@github.com:scala-cash/ziosecp256k1.git"))
+scmInfo := Some(ScmInfo(url("https://github.com/scala-cash/zio-secp256k1"), "git@github.com:scala-cash/zio-secp256k1.git"))
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
 bintrayPackageLabels := Seq("bitcoin", "bitcoin cash", "secp256k1", "zio", "blockchain")

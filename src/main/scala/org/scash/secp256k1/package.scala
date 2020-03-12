@@ -6,8 +6,6 @@ import zio.Task
 package object secp256k1 {
   type Bytes = Array[Byte]
 
-  def close = NativeSecp256k1.cleanup()
-
   def verifyLibrary: Task[Boolean] =
     Task(Secp256k1Context.isEnabled)
 
