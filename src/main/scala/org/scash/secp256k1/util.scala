@@ -16,7 +16,7 @@ object util {
 
   def bytesToHex(byteArray: Array[Byte]) = {
     val stringBuilder = new StringBuilder(byteArray.length * 2)
-    byteArray.foreach(b => stringBuilder.append(String.format("%02X", b)))
+    byteArray.foreach(b => stringBuilder.append(String.format("%02X", Byte.box(b))))
     stringBuilder.toString
   }
 }
