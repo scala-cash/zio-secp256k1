@@ -2,7 +2,7 @@ name := "zio-secp256k1"
 
 organization := "org.scash"
 
-version := "0.1.4"
+version := "0.1.5"
 
 lazy val scala212       = "2.12.10"
 lazy val scala213       = "2.13.1"
@@ -34,5 +34,5 @@ libraryDependencies ++= List(
   "dev.zio"   %% "zio-test"     % zioVersion % "test",
   "dev.zio"   %% "zio-test-sbt" % zioVersion % "test",
   "dev.zio"   %% "zio"          % zioVersion,
-  "org.scash" %% "secp256k1jni" % "1.1.2"
+  "org.scash" %% "secp256k1jni" % "1.1.3"
 )
